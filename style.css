@@ -79,11 +79,13 @@
 .light1{
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate */
     transform: rotate(45deg)
 }
 .light2{
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
     transform: translateY(10px);
 }
 .light3{
@@ -99,8 +101,6 @@
     background: red;
     opacity: 100%;
     border-radius: 50%;
-    /* background-image: url("tenor.gif"); */
-    /* <div class="tenor-gif-embed" data-postid="4717893" data-share-method="host" data-width="100%" data-aspect-ratio="1.8043478260869565"><a href="https://tenor.com/view/sparkle-gif-4717893">Sparkly GIF</a> from <a href="">Sparkle GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script> */
 }
 
 .ornament1, .ornament-shine{
@@ -114,6 +114,7 @@
 }
 
 .ornament-shine{
+    /* https://totallytransparent.tumblr.com/post/70812251778/totallytransparent-transparent-glitter-gif */
     background-image: url("sparkle.gif");
 }
 
