@@ -7,6 +7,7 @@
 }
 
 .top{
+    /* self styling */
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     width: 0;
@@ -15,10 +16,17 @@
     border-right: 75px solid transparent;
     border-bottom: 150px solid green;
     box-shadow: 0 8px 6px -6px black;
-    z-index: 2;
+    /* container styling */
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(3, 25px);
+    align-items: end;
+    justify-items: center;
+    justify-content: center;
 }
 
 .middle{
+    /* self styling */
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     width: 0;
@@ -27,10 +35,17 @@
     border-right: 125px solid transparent;
     border-bottom: 140px solid green;
     box-shadow: 0 8px 6px -6px black;
-    z-index: 1;
+    /* container styling */
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(3, 50px);
+    align-items: end;
+    justify-items: center;
+    justify-content: center;
 }
 
 .bottom{
+    /* self styling */
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     width: 0;
@@ -39,21 +54,61 @@
     border-right: 150px solid transparent;
     border-bottom: 125px solid green;
     box-shadow: 0 8px 6px -6px black;
-    z-index: 0;
+    /* container styling */
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(3, 80px);
+    align-items: end;
+    justify-items: center;
+    justify-content: center;
 }
+
+.light
+{
+    width: 10px;
+    height: 20px;
+    background: red;
+    border-radius: 5px / 10px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    /* https://code-boxx.com/css-blinking-animation/ */
+    animation: blinking 1s infinite;
+}
+
+.light1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.light2{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.light3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
 
 .trunk{
     width: 50px;
     height: 100px;
     background: brown;
     grid-row: 4 / 5;
-    grid-column: 2 / 3;
+    grid-column: 2 / 3;   
 }
 
-/* .light
-{
-    width: 20px;
-    height: 100px;
-    background: red;
-    border-radius: 100px / 50px;
-} */
+/* https://code-boxx.com/css-blinking-animation/ */
+@keyframes blinking {
+    0%{
+      background-color: yellow;
+    }
+    /* YOU CAN ADD MORE COLORS IN THE KEYFRAMES IF YOU WANT
+    50%{
+      background-color: #55d66b;
+      border: 5px solid #126620;
+    }
+    */
+    100%{
+      background-color: orange;
+    }
+  }
